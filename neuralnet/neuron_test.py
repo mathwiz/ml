@@ -3,23 +3,6 @@ import numpy as np
 from neuron import *
 
 
-def even(x):
-    return x % 2 == 0
-
-
-def expt_inv(b, p, a):
-    if p == 0:
-        return a
-    elif even(p):
-        return expt_inv(b * b, p / 2, a)
-    else:
-        return expt_inv(b, p - 1, a * b)
-
-
-def expt(b, p):
-    return expt_inv(b, p, 1)
-
-
 class MyTestCase(unittest.TestCase):
     def test1(self):
         self.assertEqual(ReLU(1), 1)
