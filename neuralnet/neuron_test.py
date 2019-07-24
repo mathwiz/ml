@@ -15,8 +15,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(n.compute(np.array([.1, .1, -.3])), 0)
 
 
-
 if __name__ == '__main__':
     unittest.main()
-
-
