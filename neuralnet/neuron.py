@@ -1,12 +1,12 @@
 import numpy as np
 
 
-def ReLU(x):
+def relu(x):
     return max(0, x)
 
 
 class Neuron:
-    def __init__(self, activation=ReLU):
+    def __init__(self, activation=relu):
         self.activation = activation
         self.inputs = []
 
